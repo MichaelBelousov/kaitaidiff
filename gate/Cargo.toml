@@ -1,0 +1,13 @@
+[package]
+name = "gate"
+version.workspace = true
+edition.workspace = true
+publish = false
+
+[dependencies]
+kaitai = { workspace = true }
+kdiff-abi = { workspace = true }
+
+[[bin]]
+name = "gate"
+path = "src/main.rs"

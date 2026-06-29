@@ -1,0 +1,24 @@
+[package]
+name = "kdiff"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Semantic binary diffing for git, driven by kaitai struct schemas"
+
+[dependencies]
+kdiff-abi = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+anyhow = { workspace = true }
+clap = { version = "4", features = ["derive"] }
+libloading = "0.8"
+toml = "0.8"
+dirs = "5"
+
+[dev-dependencies]
+tempfile = "3"
+
+[[bin]]
+name = "kdiff"
+path = "src/main.rs"
