@@ -1,5 +1,8 @@
 # kdiff — semantic binary diffing for git, driven by kaitai struct schemas
 
+> [!WARNING]
+> unreviewed slop
+
 `kdiff` diffs binary files by their *structure* instead of their bytes. You give
 it a [kaitai struct](https://kaitai.io) `.ksy` schema for a format; it compiles
 that schema into a fast native parser, parses both files into a tree, and shows
